@@ -2,6 +2,8 @@
   "name": "bookstore",
   "version": "0.1.0",
   "private": true,
+  "author": "abdulsalam jamaea",
+  "description": "build bookstore website to sell and buy books",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
