@@ -1,0 +1,121 @@
+/*  ========================================================================
+    Organize CSS Properties As 9Elements Do
+    ======================================================================== */
+
+/**
+ * GENERATED CONTENT
+ * Properties: {content} 
+ */
+
+/**
+ * POSITION AND LAYOUT
+ * Properties: {position} {z-index} {top} {bottom} {left} {right} {Grid Properties} {Flexbox Properties} {float} {clear}
+ */
+
+/**
+ * DISPLAY AND VISIBILITY
+ * Properties: {display} {opacity} {transform} 
+ */
+
+/**
+ * CLIPPING
+ * Properties: {overflow} {clip}
+ */
+
+/**
+ * ANIMATION
+ * Properties: {animation} {transition}
+ */
+
+/**
+ * BOX MODEL (FROM OUTSIDE IN)
+ * Properties: {margin} {box-shadow} {border} {border-radius} {box-sizing} {width} {height} {padding}
+ */
+
+/**
+ * BACKGROUND
+ * Properties: {background} {cursor}
+ */
+
+/**
+ * TYPOGRAPHY
+ * Properties: {font-size} {line-height} {font-family} {font-weight} {text-align} {text-transform} {word-spacing} {color}
+ */
+
+/**
+ * PSEUDO-CLASSES & PSEUDO-ELEMENTS (NESTED RULES)
+ * Pseudoes: {:hover} {:focus} {:active} {::before} {::after} {:first-child} {:last-child}
+ */
+
+
+/*  ========================================================================
+    General Styling
+    ======================================================================== */
+
+/**
+ * Importing Fonts From Google Fonts
+ * Importing {Open Sans} Font And {Montserrat} Font
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+
+/**
+ * using custom properties to add colors
+ */
+
+:root {
+    --primary-clr: #6C63FF;
+    --secondary-clr: #1F1F1F;
+    --white-clr: #FFFFFF;
+}
+
+/**
+ * remove all the initial margin and padding.
+ * set box sizing to border-box instead of {content-box}
+ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/**
+ * Setting Default Font For The Page To {Open Sans}
+ * Setting Text Color To Blackish Color (less a bit than black)
+ */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--secondary-clr);
+}
+
+/**
+ * Setting The Heading To {Montserrat} Font
+ */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/**
+ * Remove {disc} List Style Type From Unorder List
+ */
+
+ul {
+    list-style-type: disc;
+}
+
+/**
+ * To Not Let The Image To Get Bigger Than It Should Be
+ */
+
+img {
+    max-width: 100%;
+}
