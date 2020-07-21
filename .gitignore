@@ -3,6 +3,9 @@
 # netlify folder
 .netlify/
 
+# netlify file-based configuration
+netlify.toml
+
 # dependencies
 /node_modules
 /.pnp
@@ -24,3 +27,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify
