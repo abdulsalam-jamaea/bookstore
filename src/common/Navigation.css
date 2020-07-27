@@ -1,0 +1,183 @@
+/*  ========================================================================
+    Navigation Styling
+    ======================================================================== */
+
+
+/**
+ * adjust the size of the image 
+ */
+.logo__image {
+    width: 10rem;
+}
+
+/** 
+ * make background color purple using primary color
+ * make the height of the naviagtion 87px
+ */
+.navigation {
+    height: 5.4375rem;
+    background-color: var(--primary-clr);
+}
+
+/**
+ * Layout the naviagtion using flexbox
+ * make full height so you can able to use align-items property
+ */
+.navigation > .container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+/**
+ * hide navigation links in mobile design 
+ */
+.navigation__links {
+    display: none;
+}
+
+/** 
+ * hide search form in mobile design
+ */
+.navigation__search-form {
+    display: none;
+}
+
+/**
+ * helping class for building meun lines 
+ */
+.bar {
+    border-radius: 3px;
+    width: 3.25rem;
+    height: .1875rem;
+    background-color: var(--white-clr);
+}
+
+/**
+* make space between menu lines 
+*/
+.navigation__menu .menu__top,
+.navigation__menu .menu__middle {
+    margin-bottom: .5rem;
+}
+
+/**
+* change width of the first line of menu 
+*/
+.navigation__menu .menu__top {
+    width: 2.8125rem;
+}
+
+/**
+* change width of the last line of menu
+*/
+.navigation__menu .menu__bottom {
+    width: 2.5rem;
+}
+
+/** 
+ * make the line black after hovering on it
+ */
+.navigation__menu:hover > .bar {
+    background-color: var(--secondary-clr);
+}
+
+@media screen and (min-width: 768px) {
+
+    /**
+     * adjust the container width from 50px in the sides to 75px 
+     */
+    .navigation > .container {
+        width: calc(100% - 75px * 2);
+    }
+
+    /** 
+     * hide navigation menu
+     */
+    .navigation__menu {
+        display: none;
+    }
+
+    /**
+     * make navigation links beside each other and make it bigger  
+     */
+    .navigation__links {
+        display: flex;
+        font-size: 1.25rem;
+    }
+
+    /**
+     * separate the item from each other and make them capitalize  
+     */
+    .links__item {
+        margin-left: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    /**
+     * remove underline on naviagtion links
+     */
+    .links__item > a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /**
+     * adjust the container width from 75px to 100px from the sides
+     */
+    .navigation > .container {
+        width: calc(100% - 100px * 2);
+    }
+
+    /**
+     * make the logo bigger in big screen
+     */
+    .logo__image {
+        width: 12.1875rem;
+    }
+
+    /**
+     * show the search form and make it a little long 
+     */
+    .navigation__search-form {
+        position: relative;
+        display: initial;
+        width: 18.375rem;
+    }
+
+    /**
+     * make background color unvisible and delete all the border but make the bottom border 
+     * make search input white and padding in the bottom
+     */
+    .search-form__input {
+        border-width: 0;
+        border-bottom-width: .125rem;
+        padding-bottom: 6px;
+        width: 100%;
+        background-color: transparent;
+        color: var(--white-clr);
+    }
+
+    /**
+    * replace the search icon to the right place and make it white
+    */
+    .search-form__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--white-clr);
+    }
+    
+    /**
+     * make the font of the placeholder to Open Sans and make the size to 14px also make it white
+     */
+    .search-form__input::placeholder {
+        font-size: .875rem;
+        font-family: "Open Sans", sans-serif;
+        text-transform: capitalize;
+        color: var(--white-clr);
+    }
+}
