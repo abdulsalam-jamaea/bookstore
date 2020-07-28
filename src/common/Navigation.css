@@ -48,6 +48,7 @@
  * helping class for building meun lines 
  */
 .bar {
+    transition: background-color 150ms linear;
     border-radius: 3px;
     width: 3.25rem;
     height: .1875rem;
@@ -119,7 +120,12 @@
      * remove underline on naviagtion links
      */
     .links__item > a {
+        transition: color 150ms linear;
         text-decoration: none;
+    }
+
+    .links__item:hover > a {
+        color: var(--secondary-clr);
     }
 }
 
