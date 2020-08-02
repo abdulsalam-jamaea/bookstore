@@ -6,12 +6,13 @@ import {
   Route
 } from "react-router-dom";
 
-import Navigation from "./common/Navigation";
+import Navigation from "./components/Navigation";
 import Home from "./common/Home";
+
+
 /**
  * Block, Element, Modifier methodology (BEM).
  */
-
 
 function App() {
   return (
