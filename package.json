@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "netlify build",
+    "build": "react-scripts build",
+    "production-build": "netlify build",
     "production": "netlify deploy",
     "publish": "netlify deploy --prod",
     "test": "react-scripts test",
