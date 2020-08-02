@@ -1,0 +1,280 @@
+/*  ========================================================================
+    Header Styling
+    ======================================================================== */
+
+/**
+ * display content flex to stack on each other 
+ */
+.header-content {
+    flex-direction: column;
+    display: flex;
+}
+
+/**
+ * make title bold and apply primary color to it
+ * make margin botton to make space between the title and other text
+ */
+.content__title {
+    margin-bottom: .625rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-clr);
+}
+
+/**
+ * make small text and has gray color
+ * make some spacing in the bottom of text
+ */
+.content__sub-title {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--gray-clr);
+}
+
+/**
+ * center text and make spacing from the bottom
+ */
+.content__description {
+    margin-bottom: 4.1875rem;
+    text-align: center;
+}
+
+/**
+ * make flex container for the buttons and make space between them
+ */
+.content__buttons {
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+
+/**
+ * make rounded corner and set the size of the buttons and make capitalize
+ */
+.content__buttons > .btn {
+    border-radius: 3px;
+    width: 9.1875rem;
+    height: 3rem;
+    padding: .6875rem 1.5rem;
+    text-transform: capitalize;
+}
+
+/**
+ * make border to alter button instead of background color
+ */
+.content__buttons > .buttons__alter.btn {
+    border: 2px solid var(--primary-clr);
+}
+
+/**
+ * set backgound color
+ */
+.buttons__primary {
+    background-color: var(--primary-clr);
+}
+
+/**
+ * set decoration to underline
+ */
+.buttons__alter {
+    color: var(--primary-clr);
+    text-decoration: underline;
+}
+
+/**
+ * hide the illustration image
+ */
+.illustration__image {
+    display: none;
+}
+
+/*  ========================================================================
+    Header Styling End
+    ======================================================================== */
+
+
+/*  ========================================================================
+    Why Reading Books Section
+    ======================================================================== */
+
+/**
+ * make space between header and why reading section 
+ */
+.main__why-reading-books {
+    margin-top: 8.1875rem;
+}
+
+/**
+ * center the text 
+ * make spacing the bottom
+ */
+.why-reading-books__heading {
+    margin-bottom: 2.4375rem;
+    margin-left: auto;
+    margin-right: auto; 
+    width: calc(100% - 30px * 2);
+    text-align: center;
+}
+
+/**
+ * display why reading books to flex and make stack 
+ */
+.why-reading-books__section {
+    flex-direction: column;
+    display: flex;
+}
+
+/**
+ * make the illustration image before the content
+ * make the top and bottom right corner rounded
+ * display it flex to make image inside center vertical and horizontal 
+ */
+.section__illustration {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2.4375rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 21.3125rem;
+    height: 15.8125rem;
+    background-color: var(--secondary-clr);
+}
+
+/**
+ * set the size of the image
+ * make the display to initial to not let the image to hide (because we set display of illustration__image to none) 
+ */
+.section__illustration > .illustration__image {
+    display: initial;
+    width: 15.0625rem;
+    height: 14.375rem;
+}
+
+/**
+ * make the content below the image
+ * make spacing in the bottom to separate from the other content 
+ */
+.section__content {
+    order: 2;
+    margin-top: 2.625rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 30px * 2);
+}
+
+/**
+ *  center the heading and make space in the bottom
+ */
+.content__heading {
+    margin-bottom: 3.4375rem;
+    text-align: center;
+}
+
+/**
+ * set display to flex and direction to column to make to stack the content 
+ * and center the content
+ */
+.content__reading-benefit {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+/**
+ * make counts number inside the block of the content instead of outside
+ */
+.reading-benefit__item {
+    margin-bottom: 2.625rem;
+    list-style-position: inside;
+}
+
+/**
+ * make the title to inline block to make count number and title beside each other
+ */
+.item__title {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    color: var(--secondary-clr)
+}
+
+/**
+ * set color to gray to make good for eyes
+ */
+.item__description {
+    color: var(--gray-clr);
+}
+
+/*  ========================================================================
+    Why Reading Books Section End
+    ======================================================================== */
+
+/*  ========================================================================
+    Book Instead Of PDF Section
+    ======================================================================== */
+
+/**
+ * make spacing and make the heading capitalize and center the heading
+ */
+.book-instead-of-pdf__heading {
+    margin-bottom: 2.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 30px * 2);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/**
+ * display it flex and make stack on each other
+ */
+.book-instead-of-pdf__section {
+    flex-direction: column;
+    display: flex;
+}
+
+/**
+ * make margin left to make the block go to the right
+ * remove all top and bottom right radius 
+ * set the top and bottom left radius to 100px
+ */
+.book-instead-of-pdf__section > .section__illustration {
+    margin-left: auto;
+    border-top-left-radius: 100px;
+    border-top-right-radius: initial;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: initial;
+}
+
+/**
+ * change the image size
+ */
+.book-instead-of-pdf__section > .section__illustration > .illustration__image {
+    width: 17.625rem;
+    height: 13.8125rem;
+}
+
+/**
+ * display it flex and make content stack and center text
+ */
+.content__why-books {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+/**
+ * make spacing to separate the items from each other
+ */
+.why-books__item {
+    margin-bottom: 2.625rem;
+}
+
+/*  ========================================================================
+    Book Instead Of PDF Section End
+    ======================================================================== */
