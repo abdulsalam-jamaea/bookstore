@@ -67,6 +67,7 @@
 :root {
     --primary-clr: #6C63FF;
     --secondary-clr: #1F1F1F;
+    --gray-clr: #3D3D3D;
     --white-clr: #FFFFFF;
 }
 
@@ -74,12 +75,22 @@
  * remove all the initial margin and padding.
  * set box sizing to border-box instead of {content-box}
  */
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
+/**
+ * inherit inital properties from html rule
+ */
 *,
 *::before,
 *::after {
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
     padding: 0;
 }
 
@@ -105,6 +116,20 @@ h4 {
 }
 
 /**
+ * set the font to 18px
+ * remove the font weight
+ * set the color to primary color    
+ */
+
+h2,
+h3,
+h4 {
+    font-size: 1.125rem;
+    color: var(--primary-clr);
+    font-weight: initial;
+}
+
+/**
  * Remove {disc} List Style Type From Unorder List
  */
 
@@ -126,8 +151,12 @@ img {
  */
 a {
     color: var(--white-clr);
+    text-decoration: none;
 }
 
+/**
+ * container to make the content algin center
+ */
 .container {
     width: calc(100% - 30px * 2);
     max-width: 1440px;
