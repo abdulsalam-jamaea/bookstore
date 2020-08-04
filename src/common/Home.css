@@ -28,7 +28,7 @@
  * make some spacing in the bottom of text
  */
 .content__sub-title {
-    display: inline-block;
+    display: block;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--gray-clr);
