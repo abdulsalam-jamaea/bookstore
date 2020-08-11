@@ -278,3 +278,125 @@
 /*  ========================================================================
     Book Instead Of PDF Section End
     ======================================================================== */
+
+@media screen and (min-width: 768px) {
+
+    .header > .container {
+        width: calc(100% - 75px * 2);
+        display: flex;
+    }
+
+    .content__title,
+    .content__sub-title,
+    .content__description {
+        text-align: left;
+    }
+
+    .content__title {
+        font-size: 36px;
+    }
+
+    .content__sub-title {
+        font-size: 20px;
+    }
+
+    .content__description {
+        font-size: 24px;
+    }
+
+    .content__buttons > .btn { 
+        width: 180px;
+        height: 62px;
+        padding: .6875rem 0.5rem;
+        font-size: 24px;
+    }
+
+
+    .content__buttons {
+        justify-content: flex-start;
+    }
+
+    .content__buttons .btn:first-child {
+        margin-right: 1rem;
+    } 
+
+    /* .header__illustration {
+        margin-left: 1rem;
+    }
+
+    .illustration__image {
+        display: initial;
+    } */
+
+    .section__illustration {
+        width: 500px;
+        height: 400px;
+        border-top-right-radius: 225px;
+        border-bottom-right-radius: 225px;
+        overflow: hidden;
+    }
+
+    .section__illustration > .illustration__image,
+    .book-instead-of-pdf__section > .section__illustration > .illustration__image {
+        width: 80%;
+        height: 80%;
+    }
+
+    .book-instead-of-pdf__section > .section__illustration {
+        border-top-left-radius: 225px;
+        border-bottom-left-radius: 225px;
+    }
+
+    .why-reading-books__heading,
+    .book-instead-of-pdf__heading {
+        font-size: 32px;
+        margin-bottom: 81px;
+        width: calc(100% - 75px * 2);
+    }
+
+    .book-instead-of-pdf__heading {
+        margin-top: 81px;
+    }
+
+    .section__content {
+        width: calc(100% - 75px * 2);
+    }
+
+    .content__heading {
+        font-size: 28px;
+    }
+
+
+    .item__title,
+    .item__description {
+        font-size: 24px; 
+    }
+
+    .item__title {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    .header > .container {
+        width: calc(100% - 100px * 2);
+    }
+
+    /* .header__illustration {
+        margin-left: 1rem;
+        width: 656px;
+    }
+
+    .illustration__image {
+        display: initial;
+    } */
+
+    .section__content {
+        width: initial;
+        align-self: end;
+    }
+
+}
